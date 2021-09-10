@@ -12,6 +12,8 @@ $browser->request('GET','https://vitormattos.github.io/poc-lineageos-cellphone-l
 
 $browser->clickLink('Login');
 
+$browser->setServerParameter('HTTP_USER_AGENT', 'Mozilla/5.0');
+
 $crawller = $browser->submitForm('Go',[
     'username' =>  'vitor@php.rio',
     'password' =>  'uma senha muito secreta'
